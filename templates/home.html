@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+	<head>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+		<title>HOME</title>
+	<body>
+		<div class = "img">
+		<div class = "img-cover">
+
+        	<h1 class="title">SNT World News</h1>
+		</div>
+        	<h3 class="title"> World part News </h3>
+        	<form method="POST" action = "/world">
+         	       <button type="submit"> World </button>
+       		 </form>
+       		 <h3 class="title"> US part News</h3>
+       	 	<form method="POST" action= "/us">
+         	       <button type="submit"> US </button>
+       		 </form>
+
+       		 <h3 class="title"> Politics part News</h3>
+       		 <form method="POST" action= "/politics">
+              		<button type="submit"> Politics </button>
+       		 </form>
+	</body>
+</html>

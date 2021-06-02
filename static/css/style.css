@@ -1,0 +1,16 @@
+h1.title {text-shadow : 1px 8px 2px #333333; color : white; padding-top : 1px; text-align : center;}
+
+h3.title { color : white; padding-top : 70px; }
+.img{
+    position: relative;
+    background-image: url('https://image.freepik.com/free-photo/breaking-news-background_1412-560.jpg');                                                               
+    height: 100vh;
+    background-size: cover;
+}
+.img-cover{
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.4);                                                                 
+   z-index:1;
+}
