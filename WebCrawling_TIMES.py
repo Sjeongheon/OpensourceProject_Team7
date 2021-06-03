@@ -16,7 +16,6 @@ def WebCrawler_TIMES(subject) :
     titletext2 = str(soup.select(latest_titletextPath)[2])
     titletext3 = str(soup.select(latest_titletextPath)[3])
 
-
     titleURL1 = titletext1.split(spliter)[1]
     titleURL2 = titletext2.split(spliter)[1]
     titleURL3 = titletext3.split(spliter)[1]
