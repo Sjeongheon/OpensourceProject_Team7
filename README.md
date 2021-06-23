@@ -15,3 +15,6 @@ WebCrawling_TIMES.py – 파라미터에 TIMES의 주제를 넘겨주면 그 카
 static/ - 웹페이지 디자인에 필요한 css와 이미지 파일들이 존재
 summarization/ - 자연어 처리 요약기능을 가진 파일들 존재
 templates/ - 웹페이지를 구성하는 html파일들이 존재
+
+시연 영상 유튜브 링크:
+https://www.youtube.com/watch?v=glGjKIRos9Q
