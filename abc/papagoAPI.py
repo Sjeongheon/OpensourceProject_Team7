@@ -1,8 +1,8 @@
 import requests
 
 def translate(text):
-    client_id = "mZ3ufKfFqTvqiwy4PYQp" # <-- client_id 기입
-    client_secret = "eWmMzNMiCw" # <-- client_secret 기입
+    client_id = "S9r6V5c4xWp7xROMhlwd" # <-- client_id 기입
+    client_secret = "lJwj9z9ayZ" # <-- client_secret 기입
 
     data = {'text' : text,
             'source' : 'en',

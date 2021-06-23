@@ -34,12 +34,12 @@ def WebCrawler_TIMES(subject) :
 			title_imgs.append(imgsource.attrs.get('src'))
 		
 	for i in range(3):
-		titleURLsource = soup_main.select(latest_titlesourcepath)[i+1]
+		titleURLsource = soup_main.select(latest_titlesourcepath)[i]
 		if title_sources[i].find('a',class_="css-1d32glx") is None:
 			titleURLs.append("https://www.nytimes.com/"+titleURLsource.attrs.get('href'))
 		else:
 			titleURLs.append(title_sources[i].find('a',class_="css-1d32glx").attrs.get('href'))
-	print(titleURLs)
+	
 	
 	MAX_Sleep_Time = 3
 	soups = []
@@ -69,6 +69,7 @@ def WebCrawler_TIMES(subject) :
 		pages.append(page)
 		imgs.append(img)
 		dates.append(date)
+	print(imgs)
 
 	title = [title1,title2,title3]
 	title_texts = [title_text1,title_text2,title_text3]	
