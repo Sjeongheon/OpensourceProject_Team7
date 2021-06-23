@@ -1,20 +1,24 @@
-import os
-import sys
-import urllib.request
+import requests
 
-def translate(text) :
-        client_id = "ZyBOdiaTYq0bA6XwoNEI"
-        client_secret = "2u08u52QQq"
-        encText = urllib.parse.quote(text)
-        data = "source=en&target=ko&text=" + encText
-        url = "https://openapi.naver.com/v1/papago/n2mt"
-        request = urllib.request.Request(url)
-        request.add_header("X-Naver-Client-Id",client_id)
-        request.add_header("X-Naver-Client-Secret",client_secret)
-        response = urllib.request.urlopen(request, data=data.encode("utf-8"))
-        rescode = response.getcode()
-        if(rescode==200):
-                response_body = response.read()
-                return response_body.decode('utf-8')
-        else:
-                return "Error Code:" + rescode
+def translate(text):
+    client_id = "mZ3ufKfFqTvqiwy4PYQp" # <-- client_id 기입
+    client_secret = "eWmMzNMiCw" # <-- client_secret 기입
+
+    data = {'text' : text,
+            'source' : 'en',
+            'target': 'ko'}
+
+    url = "https://openapi.naver.com/v1/papago/n2mt"
+
+    header = {"X-Naver-Client-Id":client_id,
+              "X-Naver-Client-Secret":client_secret}
+
+    response = requests.post(url, headers=header, data=data)
+    rescode = response.status_code
+
+    if(rescode==200):
+        send_data = response.json()
+        trans_data = (send_data['message']['result']['translatedText'])
+        return trans_data
+    else:
+        print("Error Code:" , rescode)
