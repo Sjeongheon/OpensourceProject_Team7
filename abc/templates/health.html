@@ -48,8 +48,8 @@
 
 										<article>
 											<header class="major">
-												<h2>Health</h2>
-												<p>Health news main text</p>
+												<h2>{{d1['title'][0]}}</h2>
+												<p>Health news</p>
 											</header>
 
 											<span class="image featured"><img src={{d1['img'][0]}} alt="" /></span>
@@ -78,43 +78,37 @@
 
 												<!-- Excerpt -->
 													<article class="box excerpt">
-														<a href={{url_for('health')}} class="image left"><img src={{d1['img'][0]}} alt="" /></a>
+														<a href={{url_for('health')}} class="image left"><img src={{d1['title_img'][0]}} alt="" /></a>
 														<div>
 															<header>
-																<span class="date">July 24</span>
-																<h3><a href={{url_for('health')}}>Repairing a hyperspace window</a></h3>
+																<span class="date">{{d1['date'][0]}}</span>
+																<h3><a href={{url_for('health')}}>{{d1['title'][0]}}</a></h3>
 															</header>
-															<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus
-															semper mod quisturpis nisi consequat etiam lorem. Phasellus quam turpis,
-															feugiat et sit amet ornare in, hendrerit in lectus semper mod quis eget mi dolore.</p>
+															<p>{{d1['title_text'][0]}}</p>
 														</div>
 													</article>
 
 												<!-- Excerpt -->
 													<article class="box excerpt">
-														<a href={{url_for('health1')}} class="image left"><img src={{d1['img'][1]}} alt="" /></a>
+														<a href={{url_for('health1')}} class="image left"><img src={{d1['title_img'][1]}} alt="" /></a>
 														<div>
 															<header>
-																<span class="date">July 18</span>
-																<h3><a href={{url_for('health1')}}>Adventuring with a knee injury</a></h3>
+																<span class="date">{{d1['date'][1]}}</span>
+																<h3><a href={{url_for('health1')}}>{{d1['title'][1]}}</a></h3>
 															</header>
-															<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus
-															semper mod quisturpis nisi consequat etiam lorem. Phasellus quam turpis,
-															feugiat et sit amet ornare in, hendrerit in lectus semper mod quis eget mi dolore.</p>
+															<p>{{d1['title_text'][1]}}</p>
 														</div>
 													</article>
 
 												<!-- Excerpt -->
 													<article class="box excerpt">
-														<a href={{url_for('health2')}} class="image left"><img src={{d1['img'][2]}} alt="" /></a>
+														<a href={{url_for('health2')}} class="image left"><img src={{d1['title_img'][2]}} alt="" /></a>
 														<div>
 															<header>
-																<span class="date">July 14</span>
-																<h3><a href={{url_for('health2')}}>Preparing for Y2K38</a></h3>
+																<span class="date">{{d1['date'][2]}}</span>
+																<h3><a href={{url_for('health2')}}>{{d1['title'][2]}}</a></h3>
 															</header>
-															<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus
-															semper mod quisturpis nisi consequat etiam lorem. Phasellus quam turpis,
-															feugiat et sit amet ornare in, hendrerit in lectus semper mod quis eget mi dolore.</p>
+															<p>{{d1['title_text'][2]}}</p>
 														</div>
 													</article>
 
@@ -151,12 +145,12 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="static/assets/js/jquery.min.js"></script>
+			<script src="static/assets/js/jquery.dropotron.min.js"></script>
+			<script src="static/assets/js/browser.min.js"></script>
+			<script src="static/assets/js/breakpoints.min.js"></script>
+			<script src="static/assets/js/util.js"></script>
+			<script src="static/assets/js/main.js"></script>
 
 	</body>
 </html>
